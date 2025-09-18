@@ -1,0 +1,169 @@
+/* Fuente y estilo general */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #f1f1f1;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+#about .container {
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #1f1f1f;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+    color: #00bcd4;
+}
+
+header p {
+    margin: 10px 0 20px;
+    font-size: 1.3em;
+    color: #cccccc;
+}
+
+header .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #00bcd4;
+    color: #121212;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+header .btn:hover {
+    background-color: #0097a7;
+}
+
+/* Secciones */
+section {
+    padding: 60px 0;
+}
+
+/* Titulos de sección */
+section h2 {
+    color: #00bcd4;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+/* Cards de proyectos */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+/* Cards de experiencia y formación */
+.exp-card {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    padding: 20px;
+    width: 100%;      /* Ocupa todo el ancho del contenedor */
+    max-width: 800px; /* Máximo ancho para no ser gigante en pantallas grandes */
+    margin: 0 auto 20px auto; /* Centrado horizontal y espacio inferior */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.exp-card {
+    width: 90%;      /* Ocupa 90% del contenedor */
+    max-width: 1200px; /* Límite máximo en pantallas grandes */
+    margin: 0 auto 20px auto;
+}
+
+.card h3, .exp-card h3 {
+    margin-top: 0;
+    color: #00bcd4;
+}
+
+.card a, .exp-card a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover, .exp-card a:hover {
+    color: #00bcd4;
+}
+
+.card:hover, .exp-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+}
+
+/* Listas dentro de experiencia */
+.exp-card ul {
+    list-style: disc inside;
+    padding-left: 0;
+    color: #cccccc;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.language-card {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    padding: 20px;
+    width: 180px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.language-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+
+/* Contacto */
+#contact a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #1f1f1f;
+    color: #ccc;
+    text-align: center;
+    padding: 20px 0;
+}
